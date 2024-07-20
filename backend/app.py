@@ -12,6 +12,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 
+
 @app.route('/activities', methods=['POST', 'GET'])
 def handle_activities():
     if request.method == 'POST':
